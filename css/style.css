@@ -1,0 +1,519 @@
+html,
+body {
+    overflow-x: hidden;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"!important;
+    font-size: 1.1rem;
+}
+
+#mainNav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    transition: padding 0.4s ease-out;
+}
+
+#mainNav.navbar-shrink {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+#mainNav .navbar-brand {
+    font-size: 2rem;
+    transition: font-size 0.4s ease-out;
+}
+
+#mainNav.navbar-shrink .navbar-brand {
+    font-size: 1.25em;
+}
+
+#navbar .navbar-nav .nav-item .nav-link {
+    font-size: 0.95rem;
+    letter-spacing: 0.0625em;
+}
+
+#mainNav .navbar-toggler {
+    padding: 0.75rem;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 0.75rem;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #28A745;
+    border: 0;
+}
+
+:focus {
+    outline: none!important;
+}
+
+.navbar-show {
+    top: 0px;
+}
+
+.navbar-shadow {
+    box-shadow: 0px 0px 20px #01131bb0;
+}
+
+.navbar-hide {
+    top: -100px !important;
+}
+
+.navbar-collapse {
+    background: white;
+    width: 100% !important;
+}
+
+.navbar a {
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar a:hover,
+.navbar a:focus,
+.navbar a:active,
+.navbar .dropdown-item:hover {
+    color: #28A745!important;
+}
+
+#mainNav .navbar-nav .dropdown-menu {
+    border: 0px !important;
+}
+
+
+/*Social Links*/
+
+.socialLinks {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: 20px;
+    right: auto;
+    z-index: 10;
+    color: rgb(168, 178, 209);
+}
+
+.socialLinks ul {
+    display: block;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.scoialLinks li {
+    display: list-item;
+}
+
+.socialLinks li:last-of-type {
+    margin-bottom: 20px;
+}
+
+.socialLinks li {
+    display: list-item;
+}
+
+.socialLinks i {
+    padding-top: 20px;
+    font-size: 1.8rem;
+    color: #8f8f8f;
+}
+
+.socialLinks i:hover {
+    color: #218838;
+}
+
+.socialLinks ul::after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 90px;
+    background-color: #28a745 !important;
+    margin: 0px auto;
+}
+
+
+/*Email Link Fixed*/
+
+.emailLink {
+    display: flex;
+    align-items: center;
+    writing-mode: vertical-rl;
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: auto;
+    right: 20px;
+    z-index: 10;
+}
+
+.emailLink a {
+    font-size: 18px;
+    line-height: 1.2;
+    padding-left: 5px;
+    letter-spacing: 0.1em;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    margin: 20px auto;
+    color: #8f8f8f;
+    font-weight: 700;
+}
+
+.emailLink a:hover {
+    text-decoration: none;
+    color: #218838;
+}
+
+.emailLink::after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 90px;
+    background-color: #28a745;
+    margin: 0px auto;
+}
+
+
+/*HERO*/
+
+.hero-bg {
+    background: url(../img/pexels-photo-212324.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+
+/*SECTION*/
+
+.page-section {
+    padding: 6rem 0;
+}
+
+.page-section h2.section-heading {
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+section:nth-of-type(odd) {
+    background-color: #FFFFFF;
+}
+
+section:nth-of-type(even) {
+    background-color: #e0e0e0;
+}
+
+section hr,
+.page-section hr {
+    width: 80px;
+    height: 4px;
+}
+
+
+/*HERO*/
+
+#hero {
+    position: relative;
+}
+
+#hero a {
+    position: absolute;
+    left: 50%;
+    margin-left: -75px;
+    bottom: 150px;
+    border: 1px solid #FFFFFF;
+}
+
+.hero-content {
+    height: 100%;
+    padding: 0 25%;
+}
+
+.hero h1 {
+    font-size: 7rem;
+    opacity: 0.7;
+}
+
+.hero h2 {
+    font-size: 4.5rem;
+}
+
+
+/*INTRO*/
+
+#intro p {
+    font-size: 1.2rem;
+    padding: 0 3rem;
+}
+
+#intro {
+    position: relative;
+}
+
+#intro::before {
+    content: '';
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 15%;
+    transform: skewY(1deg);
+    transform-origin: bottom right;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#intro::after {
+    content: '';
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 15%;
+    transform: skewY(-1.5deg);
+    transform-origin: bottom right;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+/*TUINAANLEG*/
+
+#tuinaanleg p {
+    padding: 5%;
+    height: 120px;
+}
+
+
+/*WERKWIJZE*/
+
+#werkwijze {
+    position: relative;
+}
+
+#werkwijze::before {
+    content: '';
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 8%;
+    transform: skewY(1deg);
+    transform-origin: bottom right;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#werkwijze::after {
+    content: '';
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 8%;
+    transform: skewY(-1.2deg);
+    transform-origin: bottom right;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.openinghours-highlight {
+    color: #218838;
+}
+
+footer {
+    position: relative;
+    z-index: 9999;
+    bottom: 0;
+}
+
+.sociallinksFooter {
+    display: none;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/*Page Header*/
+
+.page-header {
+    margin-top: 100px;
+}
+
+.werkwijze-bg,
+.realisaties-bg {
+    background: url(../img/pexels-photo-212324.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.werkwijze-bg-overlay,
+.realisaties-bg-overlay {
+    background: linear-gradient(120deg, rgba(255, 255, 255, 1) 5%, rgba(255, 255, 255, 0) 100%);
+    height: 100%;
+    width: 100%;
+}
+
+
+/*Werkwijze Page*/
+
+.werkwijzeContent p {
+    padding: 0 3.5%;
+}
+
+
+/*Afsluitingen & Poorten Page*/
+
+.afsluitingen-poorten-bg {
+    background: url(../img/afsluitingen-poorten-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+
+/*Aangepaste container Class*/
+
+#houtsoorten .container,
+#tuinaanleg .container,
+#realisatie .container {
+    max-width: 80% !important;
+}
+
+
+/*Terras en Oprit*/
+
+.terras-oprit-bg {
+    background: url(../img/terras-oprit.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+
+/*Tuinonderhoud*/
+
+.tuinonderhoud-bg {
+    background: url(../img/tuinonderhoud.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+
+/*Tuinhuizen*/
+
+.tuinhuizen-bg {
+    background: url(../img/tuinhuizen.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+
+/*Realisaties Page*/
+
+#realisaties .col-lg-3,
+#realisaties .col-md-6,
+#realisaties .col-sm-12 {
+    padding: 15px;
+    width: 100%;
+}
+
+.realisatie-thumbnail {
+    position: relative;
+    background: rgba(100, 202, 122, 1);
+    transition: all 0.3s ease-out;
+    -webkit-transition: 0.3s ease-out;
+    -moz-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
+}
+
+.realisatie-thumbnail img {
+    position: relative;
+    cursor: pointer;
+    opacity: 1;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+
+.realisatie-thumbnail span {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    letter-spacing: 1;
+    opacity: 0;
+}
+
+.realisatie-thumbnail:hover>img {
+    opacity: 0.5;
+}
+
+.realisatie-thumbnail:hover>span {
+    opacity: 1;
+}
+
+
+/*Contact Page*/
+
+.form-group {
+    position: relative;
+}
+
+.form-group i {
+    display: none;
+    position: absolute;
+    top: 13px;
+    right: 10px;
+}
+
+.form-group small {
+    display: none;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+.success input,
+.success textarea {
+    border: 2px solid #218838;
+}
+
+.error input,
+.error textarea {
+    border: 2px solid red;
+}
+
+.success i.fa-check-circle {
+    display: block;
+    color: #218838;
+}
+
+.error i.fa-exclamation-circle,
+.error small {
+    display: block;
+    color: red;
+}
+
+.contact-map iframe {
+    line-height: 0;
+}

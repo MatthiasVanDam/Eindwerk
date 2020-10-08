@@ -1,0 +1,37 @@
+#lightbox {
+    position: fixed;
+    z-index: 9001;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+}
+
+#lightboxCont {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox.active {
+    display: flex;
+}
+
+#lightboxClose {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    top: 0px;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    color: aliceblue;
+    font-size: 2rem;
+    background-color: #28a745;
+}
